@@ -1,0 +1,147 @@
+.headers {
+  height: 80px;
+  text-align: center;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  height: 600px;
+}
+.episodes {
+  width: 30%;
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  overflow: auto;
+}
+
+.characters {
+  width: 70%;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  overflow: auto;
+}
+.centerText {
+  text-align: center;
+}
+
+.episodeList:hover {
+  background-color: rgb(239, 168, 210);
+}
+.episodeList,
+.selected {
+  height: 30px;
+  background-color: white;
+  margin: 10px 20px 10px 10px;
+  border: 1px solid blue;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: cursive;
+  padding-top: 2px;
+  word-wrap: break-word;
+}
+
+.selected {
+  background-color: rgb(205, 39, 174);
+  border: 1px solid rgb(242, 8, 16);
+  font-weight: 800;
+}
+
+.CharacterList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.characterWidth {
+  width: 163px;
+  height: 180px;
+}
+
+.customSpan {
+  margin: 15px;
+  width: 170px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.font {
+  font-family: cursive;
+  word-wrap: break-word;
+  overflow: hidden;
+  white-space: break-spaces;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1080px) {
+  .episodeList,
+  .selected {
+    height: 30px;
+    background-color: white;
+    margin: 10px 20px 10px 10px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: cursive;
+    padding-top: 2px;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+
+  .selected {
+    background-color: rgb(205, 39, 174);
+    border: 1px solid rgb(242, 8, 16);
+    font-weight: 800;
+  }
+
+  .characterWidth {
+    width: 100%;
+    height: 60%;
+  }
+  .font {
+    font-family: cursive;
+    font-size: 0.8rem;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: break-spaces;
+    text-overflow: ellipsis;
+  }
+  .customSpan {
+    margin: 10px;
+    width: 100px;
+  }
+}
